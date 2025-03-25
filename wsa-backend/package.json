@@ -1,7 +1,7 @@
 {
   "name": "wsa-backend",
   "scripts": {
-    "dev": "bun run --hot src/index.js"
+    "dev": "bun run --hot src/api/index.js"
   },
   "dependencies": {
     "hono": "^4.7.5"
