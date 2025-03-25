@@ -1,6 +1,6 @@
-// server.js
+
 import { Hono } from 'hono';
-import { db } from 'src/utils/firebase.js';  // Import the Firestore instance
+import { db } from '../utils/firebase.js';  // Import the Firestore instance
 import argon2 from 'argon2';
 
 const app = new Hono();
@@ -54,5 +54,10 @@ app.post('/signin', async (ctx) => {
   }
 });
 
+
+
 // Start the Hono app
-app.listen(3000);
+export default { 
+  port: 3000, 
+  fetch: app.fetch, 
+} 

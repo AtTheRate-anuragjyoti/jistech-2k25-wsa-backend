@@ -4,6 +4,8 @@
     "dev": "bun run --hot src/api/index.js"
   },
   "dependencies": {
+    "argon2": "^0.41.1",
+    "firebase-admin": "^13.2.0",
     "hono": "^4.7.5"
   },
   "devDependencies": {
